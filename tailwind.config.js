@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [Custom3d()],
+  plugins: [Custom3DAnimations()],
 };
 
-function Custom3d() {
+function Custom3DAnimations() {
   return plugin(function ({ addUtilities }) {
     addUtilities({
       ".rotate-y-180": {
@@ -18,8 +18,8 @@ function Custom3d() {
       ".transform-style-3d": {
         transformStyle: "preserve-3d",
       },
-      ".perspective-1000": {
-        perspective: "1000px",
+      ".perspective-1600": {
+        perspective: "1600px",
       },
       ".backface-hidden": {
         backfaceVisibility: "hidden",
